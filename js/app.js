@@ -17,9 +17,9 @@
           templateUrl: './html/home.html',
           controller: 'homeController'
         })
-        .state('eszkozok', {
-          url: '/eszkozok',
-          templateUrl: './html/eszkozok.html',
+        .state('termekek', {
+          url: '/termekek',
+          templateUrl: './html/termekek.html',
           controller: 'eszkozokController'
         })
         .state('contact', {
@@ -41,10 +41,10 @@
   ])
 
   // eszkozok controller
-  .controller('eszkozokController', [
+  .controller('termekekController', [
     '$scope',
     function($scope) {
-      fetch('./php/eszkozok.php')
+      fetch('./php/termekek.php')
       .then(function(response) {
         return response.json();
       })
