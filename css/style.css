@@ -1,0 +1,23 @@
+body {
+  background-image: url("../img/background/background.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  background-color: rgba(255, 255, 255, .6);
+  margin-top: 5rem;
+}
+.contact {
+  text-align: center;
+}
+.card-container {
+  display: inline-block;
+  max-width: 300px;
+  height: 500px;
+}
+.card-img-top{
+  height: 180px !important;
+  width: auto;
+}
