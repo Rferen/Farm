@@ -45,17 +45,17 @@
     '$scope',
     function($scope) {
       console.log('Controller: termekek');  
-      // fetch('./php/termekek.php')
-      // .then(function(response) {
-      //   return response.json();
-      // })
-      // .then(function(data) {
-      //   $scope.data = data;
-      //   $scope.$applyAsync();
-      // })
-      // .catch(function(error) {
-      //   console.log(error);
-      // })
+      fetch('./php/termekek.php')
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        $scope.data = data;
+        $scope.$applyAsync();
+      })
+      .catch(function(error) {
+        console.log(error);
+      })
     }
   ])  
   
