@@ -23,4 +23,12 @@ body {
   margin-top: 8rem;
   margin-bottom: 7rem; 
 }
+#cookie{
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+#bottom-icon{
+  float: right !important;
+}
 
