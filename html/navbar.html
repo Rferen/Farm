@@ -1,11 +1,12 @@
-<nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
-  <div class="container-fluid">  
-    <a class="navbar-brand" ui-sref="home"></a>
+<nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark ">
+  <div class="container-fluid me-5 ms-5">  
+    <a class="navbar-brand flex home-button" ui-sref="home"><img src="../img/ico_50.png"  alt="New Hope Farm"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <h4 class="display-6 text-white ms-3">New Hope Farm</h4>
     <div class="collapse navbar-collapse " id="navbarScroll">
-      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ms-5 style="--bs-scroll-height: 100px;">
         <li class="nav-item ">
           <a class="nav-link active" aria-current="page" ui-sref="home">Home</a>
         </li>
@@ -16,10 +17,17 @@
           <a class="nav-link" ui-sref="contact">Kapcsolat</a>
         </li>
       </ul>
+      
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <a href=""><i class="fas fa-user text-white m-3"></i></a>
+        <a href=""><i class="fas fa-cart-shopping text-white m-3 "></i></a>
+        <input class="form-control  ms-5 " type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success ms-2" type="submit">Search</button>
       </form>
     </div>
   </div>
 </nav>
+
+
+
+

@@ -1,5 +1,4 @@
 body {
-  background-image: url("../img/background.jpg");
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -7,7 +6,6 @@ body {
 }
 .container {
   background-color: rgba(255, 255, 255, .6);
-  margin-top: 5rem;
 }
 .contact {
   text-align: center;
@@ -21,3 +19,8 @@ body {
   height: 180px !important;
   width: auto;
 }
+.mtb-5{
+  margin-top: 8rem;
+  margin-bottom: 7rem; 
+}
+

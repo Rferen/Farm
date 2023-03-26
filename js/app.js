@@ -20,7 +20,7 @@
         .state('termekek', {
           url: '/termekek',
           templateUrl: './html/termekek.html',
-          controller: 'eszkozokController'
+          controller: 'termekekController'
         })
         .state('contact', {
           url: '/contact',  
@@ -40,22 +40,23 @@
     }
   ])
 
-  // eszkozok controller
+  // termekek controller
   .controller('termekekController', [
     '$scope',
     function($scope) {
-      fetch('./php/termekek.php')
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(data) {
-        $scope.data = data;
-        $scope.$applyAsync();
-      })
-      .catch(function(error) {
-        console.log(error);
-      })
-    },
+      console.log('Controller: termekek');  
+      // fetch('./php/termekek.php')
+      // .then(function(response) {
+      //   return response.json();
+      // })
+      // .then(function(data) {
+      //   $scope.data = data;
+      //   $scope.$applyAsync();
+      // })
+      // .catch(function(error) {
+      //   console.log(error);
+      // })
+    }
   ])  
   
   // Contact controller
