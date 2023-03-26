@@ -1,7 +1,7 @@
 <?php
 
 try {
-  $mysqli = new mysqli("localhost", "root", "", "termekek");
+  $mysqli = new mysqli("localhost", "root", "", "farm");
   $mysqli->set_charset("utf8mb4");
   $result = $mysqli->query("SELECT * FROM termekek");
   $rows   = $result->fetch_all(MYSQLI_ASSOC);
