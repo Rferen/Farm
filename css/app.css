@@ -23,6 +23,9 @@ body {
   margin-top: 8rem;
   margin-bottom: 7rem; 
 }
-
+#home-text{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
 
 
