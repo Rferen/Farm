@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2023. Már 28. 13:26
+-- Létrehozás ideje: 2023. Már 28. 15:35
 -- Kiszolgáló verziója: 10.4.27-MariaDB
 -- PHP verzió: 8.1.12
 
@@ -52,7 +52,13 @@ INSERT INTO `termekek` (`id`, `type`, `name`, `description`, `img`, `price`, `va
 (8, 'Gyumolcs', 'Málna', 'Magyarországon őshonos, föld alatti tarackokat hajtó, kb. 2 m magas félcserje. Levelei 3-5, ritkán 7 tagúak, felül simák, alul gyapjasak, szélük fűrészfogas. Májustól augusztusig virágzik.', 'malna', 1000, 1),
 (9, 'Husok', 'Marha bélszín', 'A marhabélszín pecsenyehús, más néven vesepecsenye, a hátszín és a fartő közti hosszúkás rész. Ez a marha legértékesebb része. A bélszín középső részét szeletelve steaket süthetünk. Magas hőfokon sütve viszonylag rövid idő alatt megsül.', 'marha_belszin', 18700, 1),
 (10, 'Husok', 'Szarvas steak', 'A szarvascomb steak, grill és hirtelen sütéshez ideális, nemes húsfajta. A hús zsírszegényebb, mint a szarvasmarháé, fehérje tartalma magasabb, íze pedig nem összehasonlítható.', 'szarvas_steak', 16000, 1),
-(11, 'Husok', 'Wagyu', 'A steakértők nagy többsége szerint a világ egyik legjobb steak alapanyaga a wagyu marha, amelynek egyedien különleges szövetszerkezete, egyenletesen rétegelt zsírtartalma, különleges semmivel sem összehasonlítható ízvilága nem alaptalanul emelte ezt a hústípust a steak alapanyagok képzeletbeli trónjára.', 'wagyu', 32000, 1);
+(11, 'Husok', 'Wagyu', 'A steakértők nagy többsége szerint a világ egyik legjobb steak alapanyaga a wagyu marha, amelynek egyedien különleges szövetszerkezete, egyenletesen rétegelt zsírtartalma, különleges semmivel sem összehasonlítható ízvilága nem alaptalanul emelte ezt a hústípust a steak alapanyagok képzeletbeli trónjára.', 'wagyu', 32000, 1),
+(12, 'Kesztermekek', 'Barack lekvár', '', 'barack_lekvar', 1350, 1),
+(13, 'Kesztermekek', 'Eper lekvár', '', 'eper_lekvar', 1850, 1),
+(14, 'Kesztermekek', 'Juhar szirup', 'A juharszirup 100%-ban természetes, íze semmihez sem hasonlítható, egyedi és karakteres, éppen ezért szeretjük annyira. Enyhén karamellizált íz, ami nagymértékben függ a juharszirup színétől: sötétebb vagy világosabb. A juharszirup éppen a karakteres íze miatt az egyik legkedveltebb természetes ízesítőszer.', 'juhar_szirup', 2300, 1),
+(15, 'Kesztermekek', 'Méz', 'Az akácméz harmonikus, kellemesen lágy ízű, akácvirág illatú, édes és kevésbé savas méz. Színe kristálytiszta, a csaknem színtelentől az enyhén sárgás, egyes évjáratokban zöldes árnyalatig terjedhet. Mellékíz nélküli aromája teszi egyedivé. A legtöbb méznél édesebb, nagyon jól lehet vele ételt, illetve italt édesíteni.', 'mez', 1600, 1),
+(16, 'Kesztermekek', 'Propolisz cseppek', 'A propolisz , egy méltán híres csodaszer, körülbelül 200 féle anyag jótékony keveréke. Főbb összetevői: balzsamok (50-60%), viaszok (10-30%), gyanták, illóolajok, virágpor, vitaminok, nyomelemek. A méhek főként a nyír- és nyárfarügyekről gyűjtik ezt a csodaszert.', 'propolisz', 3100, 1),
+(17, 'Kesztermekek', 'Szilva lekvár', '', 'szilva_lekvar', 1450, 1);
 
 --
 -- Indexek a kiírt táblákhoz
@@ -72,7 +78,7 @@ ALTER TABLE `termekek`
 -- AUTO_INCREMENT a táblához `termekek`
 --
 ALTER TABLE `termekek`
-  MODIFY `id` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
