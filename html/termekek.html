@@ -57,7 +57,7 @@
             type="button"
             aria-controls="tab-3"
             aria-selected="false">
-            Gépek
+            Húsok
           </button>
         </li>
         
@@ -135,10 +135,10 @@
           class="tab-pane fade p-3 text-center"
           role="tabpanel"
           aria-labelledby="tab-3-tab">
-          <div class="card-container m-3" ng-repeat="x in data" ng-if="x.type=='Gepek'">
+          <div class="card-container m-3" ng-repeat="x in data" ng-if="x.type=='Husok'">
             <div class="card ">
               <img
-                ng-src="./img/gepek/{{x.img}}.jpg"
+                ng-src="./img/{{x.img}}.jpg"
                 class="card-img-top item-image"
                 alt="{{x.name}}" />
               <div class="card-body">
@@ -161,7 +161,7 @@
           <div class="card-container m-3" ng-repeat="x in data" ng-if="x.type=='Sutok'">
             <div class="card ">
               <img
-                ng-src="./img/sutok/{{x.img}}.jpg"
+                ng-src="./img/{{x.img}}.jpg"
                 class="card-img-top item-image"
                 alt="{{x.name}}" />
               <div class="card-body">
