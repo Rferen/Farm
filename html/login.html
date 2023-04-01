@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./login.css">
+    <style>
+      
+    </style>
+
+    <title>Login form</title>
+  </head>
+  <body>
+   <main>
+     <h1 class="m-5 text-center">Login/regisztráció</h1>
+    <divclass="container">
+     <div id="login-container" class="m-auto mt-5 p-2 rounded-3 shadow">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-login-tab" data-bs-toggle="tab" data-bs-target="#nav-login" type="button" role="tab" aria-controls="nav-login" aria-selected="true">Login</button>
+          <button class="nav-link" id="nav-reg-tab" data-bs-toggle="tab" data-bs-target="#nav-reg" type="button" role="tab" aria-controls="nav-reg" aria-selected="false">Regisztráció</button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active m-3" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+          <h2>Login</h2>
+          <form class="row g-3">
+            <div class="row mt-2">
+              <label for="userNameLogin" class="form-label mt-3">Username</label>
+              <div class="input-group">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="userNameLogin"  required>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <label for="passwordLogin" class="form-label">Password</label>
+              <div class="input-group">
+                <span class="input-group-text" ><i class="fas fa-lock"></i></span>
+                <input type="password"  class="form-control" id="passwordLogin"  required>
+              </div>
+            </div>
+                   
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" id="loginButton">Belépés</button>
+            </div>
+          </form>
+          <span class="separator">or</span>
+          <p>Login with Google</p>
+          
+          <p>Login with Facebook</p>
+        </div>
+
+        <div class="tab-pane fade" id="nav-reg" role="tabpanel" aria-labelledby="nav-reg-tab">
+          <h2>Regisztráció</h2>
+          <form class="row g-3">
+            <div class="row mt-2">
+              <label for="userNameRegistrarion" class="form-label mt-3">Username</label>
+              <div class="input-group">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control"  id="userNameRegistrarion" required>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <label for="emailRegistration" class="form-label mt-3">Email cím
+              </label>
+              <div class="input-group">
+                <span class="input-group-text">@</span>
+                <input type="email" class="form-control" id="emailRegistration" required>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <label for="passwordRegistration" class="form-label">Password</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                <input type="password"  class="form-control" id="passwordRegistration" required>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <label for="passwordRegistrationAgain" class="form-label">Password  újra</label>
+              <div class="input-group">
+                <span class="input-group-text" ><i class="fas fa-lock"></i></span>
+                <input type="password"  class="form-control" id="passwordRegistrationAgain" required>
+              </div>
+            </div>
+          
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="accept">
+                <label class="form-check-label" for="accept">
+                 Elfogadom a Felhasználói feltételekett.
+                </label>
+              </div>
+            </div>
+          
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" id="signinButton">Regisztráció</button>
+            </div>
+          </form>
+          <span class="separator">or</span>
+          <p>registration with Google</p>
+          
+          <p>registration with Facebook</p>
+        </div>
+        </div>
+     </div>
+   </main>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="login.js"></script>
+
+   
+  </body>
+</html>
