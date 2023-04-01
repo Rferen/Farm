@@ -26,6 +26,11 @@
           url: '/contact',  
           templateUrl: './html/contact.html',
           controller: 'contactController'
+        })
+        .state('login', {
+          url: '/login',  
+          templateUrl: './html/login.html',
+          controller: 'loginController'
         });
       
       $urlRouterProvider.otherwise('/');
