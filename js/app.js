@@ -22,15 +22,15 @@
           templateUrl: './html/termekek.html',
           controller: 'termekekController'
         })
-        .state('contact', {
-          url: '/contact',  
-          templateUrl: './html/contact.html',
-          controller: 'contactController'
-        })
         .state('login', {
           url: '/login',  
           templateUrl: './html/login.html',
           controller: 'loginController'
+        })
+        .state('contact', {
+          url: '/contact',  
+          templateUrl: './html/contact.html',
+          controller: 'contactController'
         });
       
       $urlRouterProvider.otherwise('/');
